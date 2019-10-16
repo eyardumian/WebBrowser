@@ -38,6 +38,7 @@
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.StatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -47,10 +48,11 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(3, 3);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(615, 386);
+            this.tabControl1.Size = new System.Drawing.Size(618, 414);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -60,7 +62,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(607, 360);
+            this.tabPage1.Size = new System.Drawing.Size(610, 388);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -80,10 +82,11 @@
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SearchTextBox,
-            this.SearchButton});
+            this.SearchButton,
+            this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(3, 3);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(601, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(604, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -118,8 +121,18 @@
             this.webBrowser1.Location = new System.Drawing.Point(3, 28);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(601, 329);
+            this.webBrowser1.Size = new System.Drawing.Size(604, 357);
             this.webBrowser1.TabIndex = 1;
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // WebBrowserUserControl
             // 
@@ -152,5 +165,6 @@
         public System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
         public System.Windows.Forms.ToolStripStatusLabel StatusLabel1;
         public System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

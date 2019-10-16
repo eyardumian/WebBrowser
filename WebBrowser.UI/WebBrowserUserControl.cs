@@ -46,5 +46,13 @@ namespace WebBrowser.UI
             histItem.Title = webBrowser1.DocumentTitle;
             histItem.Date = DateTime.Now;
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            var newItem = new BookmarkItem();
+            newItem.URL = SearchTextBox.Text;
+            newItem.Title = webBrowser1.DocumentTitle;
+            BookmarkManager.AddItem(newItem);
+        }
     }
 }
