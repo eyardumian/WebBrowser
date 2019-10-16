@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WebBrowser.Logic;
 
 namespace WebBrowser.UI
 {
@@ -15,6 +16,12 @@ namespace WebBrowser.UI
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void manageHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var historyItem = new HistoryManagerForm();
+            historyItem.ShowDialog();
         }
     }
 }

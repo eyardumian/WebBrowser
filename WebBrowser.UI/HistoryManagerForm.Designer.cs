@@ -41,12 +41,12 @@
             this.HistoryListBox.FormattingEnabled = true;
             this.HistoryListBox.Location = new System.Drawing.Point(0, 0);
             this.HistoryListBox.Name = "HistoryListBox";
-            this.HistoryListBox.Size = new System.Drawing.Size(383, 450);
+            this.HistoryListBox.Size = new System.Drawing.Size(402, 450);
             this.HistoryListBox.TabIndex = 0;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(408, 91);
+            this.textBox1.Location = new System.Drawing.Point(429, 91);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(207, 32);
@@ -54,7 +54,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(648, 91);
+            this.button1.Location = new System.Drawing.Point(674, 91);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 32);
             this.button1.TabIndex = 2;

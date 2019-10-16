@@ -45,6 +45,7 @@ namespace WebBrowser.UI
             histItem.URL = SearchTextBox.Text;
             histItem.Title = webBrowser1.DocumentTitle;
             histItem.Date = DateTime.Now;
+            HistoryManager.AddItem(histItem);
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
