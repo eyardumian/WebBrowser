@@ -23,5 +23,10 @@ namespace WebBrowser.UI
             var historyItem = new HistoryManagerForm();
             historyItem.ShowDialog();
         }
+
+        private void manageBookmarksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+       
+        }
     }
 }
