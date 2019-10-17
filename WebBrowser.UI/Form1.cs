@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WebBrowser.Logic;
+using 
 
 namespace WebBrowser.UI
 {
@@ -26,7 +27,18 @@ namespace WebBrowser.UI
 
         private void manageBookmarksToolStripMenuItem_Click(object sender, EventArgs e)
         {
-       
+            var bookmarkItem = new BookmarkManagerForm();
+            bookmarkItem.ShowDialog();
+        }
+
+        private void exitApplicationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void savePageAsHTMLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webBrowserUserControl1.webBrowser1.ShowSaveAsDialog();
         }
     }
 }

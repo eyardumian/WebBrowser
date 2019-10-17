@@ -23,7 +23,7 @@ namespace WebBrowser.UI
             var items = BookmarkManager.GetItems();
             foreach (var item in items)
             {
-                BookmarkListBox.Items.Add(string.Format("{0} [{1}]", item.URL, item.Title));
+                BookmarkListBox.Items.Add(string.Format("{0} [{1}]", item.Title, item.URL));
             }
         }
 
